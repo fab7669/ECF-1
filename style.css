@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bandeau2 ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#bandeau2>ul>li {
+    position: relative;
+
+}
+
+#bandeau2>ul>li>ul {
+    position: absolute;
+    display: none;
+}
+
+#bandeau2>ul>li :hover {
+    text-decoration: underline;
+}
+
+#bandeau2>ul>li>a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    padding: 0 90px;
+    text-decoration: none;
+    font-family: inknut antiqua, avec-serif;
+    color: #f8f4f4;
+}
+
+#bandeau2>ul>li:hover>ul {
+    display: block;
+}
+
+#bandeau2>ul>li>ul>li>a {
+    display: block;
+    position: relative;
+    font-family: inknut antiqua, avec-serif;
+    text-decoration: none;
+    color: #f5f1f1;
+    line-height: 20px;
+    width: 200px;
+}
+
+#bandeau1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: #333;
+}
+
+.logo {
+    height: 8%;
+    width: 8%;
+}
+
+#beaujolaisnouveau {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+}
+
+#beaujolaisnouveau p {
+    text-align: left;
+    line-height: 2rem;
+    font-family: 'inter', sans-serif;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'inter', sans-serif;
+}
+
+#premierarticle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.article a {
+    border: 1px solid rgba(17, 17, 17, 0.727);
+    border-radius: 30% 30%;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.gridcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    color: #f9f6f6;
+    background-color: #716e6e;
+    padding: 5px 5px;
+
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}
+
+#premierarticle p {
+    font-style: italic;
+    font-family: 'inter', sans-serif;
+    text-shadow: 1px 1px black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+h3 {
+    font-family: 'inter', sans-serif;
+}
+
+.articles {
+    margin-top: 30px;
+}
+
+#marathon {
+    display: flex;
+    margin-top: 100px;
+    line-height: 2rem;
+    font-family: 'inter', sans-serif;
+    align-items: center;
+    padding-left: 30px;
+
+}
+
+#video {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#photos {
+    margin-top: 150px;
+    text-align: center
+}
+
+.marathon {
+    height: 70%;
+    width: 70%;
+}
+
+#articlegp {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+
+}
+
+#articlegp p {
+    font-family: 'inter', sans-serif;
+    line-height: 2rem;
+
+}
+
+.martin {
+    height: 30%;
+    width: 30%;
+}
+
+.jorge {
+    height: 30%;
+    width: 30%;
+    justify-content: center;
+}
+
+video {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#video p {
+    text-align: center;
+    color: rgba(225, 41, 41, 0.849);
+
+}
+
+#articlegp {
+    padding: 10px;
+}
+
+#formulaire {
+    margin-top: 100px;
+}
+
+form {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(202, 185, 159, 0.748);
+    box-sizing: border-box;
+}
+
+fieldset {
+    padding-top: 30px;
+}
+
+#meteo>h4 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#meteo>p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#meteo {
+    text-align: center;
+    line-height: 2rem;
+}
+
+#meteo>figure {
+    margin-top: 100px;
+}
+
+.imagemeteo {
+    height: 50%;
+    width: 50%;
+}
+
+.slides img {
+    display: block;
+}
+
+.slider {
+    width: 714px;
+    height: 555px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.arrow-left, .arrow-right {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: .4;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    transition: all 0.5s ease;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 1;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+.slides {
+    display: flex;
+}
+
+#tennis {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 2rem;
+    line-height: 2rem;
+
+}
+
+#tennis2 {
+    display: flex;
+    line-height: 2rem;
+    margin-left: 2rem;
+
+}
+
+#tennis2>p {
+    margin-top: 5rem;
+}
+
+.nadal {
+    height: 30%;
+    width: 30%;
+}
+
+#trump {
+    justify-content: center;
+    text-align: center;
+
+}
+
+#trump p {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'inter', sans-serif;
+}
+
+.trump2 {
+    margin-top: 100px;
+    height: 40%;
+    width: 40%;
+
+}
+
+@media (max-width: 768px) {
+    #premierarticle {
+        display: block;
+    }
+
+    #bandeau2 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo {
+        height: 25%;
+        width: 25%;
+        margin-top: 70px;
+    }
+
+    #bandeau2>ul>li>a {
+        height: 50px;
+        line-height: 20px;
+        font-weight: 600;
+        padding: 0 0px;
+    }
+
+    #beaujolaisnouveau {
+        display: block;
+    }
+
+    #marathon {
+        display: block;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    #articlegp {
+        display: block;
+    }
+
+    .martin {
+        height: 100%;
+        width: 100%;
+    }
+
+    .jorge {
+        height: 100%;
+        width: 100%;
+    }
+
+    .nadal {
+        height: 50%;
+        width: 50%;
+    }
+
+    #tennis {
+        display: block;
+        text-align: center;
+    }
+
+    #tennis2 {
+        display: block;
+        text-align: center;
+    }
+
+    #photos {
+        margin-top: 50px;
+    }
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        margin-top: 150px;
+        text-align: center;
+        align-items: center;
+    }
+}
