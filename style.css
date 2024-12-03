@@ -31,6 +31,7 @@
     text-decoration: none;
     font-family: inknut antiqua, avec-serif;
     color: #f8f4f4;
+    padding-top: 20px;
 }
 
 #bandeau2>ul>li:hover>ul {
@@ -45,7 +46,11 @@
     color: #f5f1f1;
     line-height: 20px;
     width: 200px;
+    margin-left: 40px;
+
 }
+
+
 
 #bandeau1 {
     display: flex;
@@ -120,14 +125,20 @@ p {
 .button {
     text-decoration: none;
     color: #f9f6f6;
-    background-color: #716e6e;
-    padding: 5px 5px;
+    background-color: #565454;
+    padding: 10px 10px;
+
 
 }
 
 .image {
     height: 300px;
     width: 300px;
+    border-radius: 20px;
+}
+
+.article img {
+    border-radius: 20px;
 }
 
 #premierarticle p {
@@ -154,23 +165,23 @@ h3 {
     line-height: 2rem;
     font-family: 'inter', sans-serif;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 70px;
 
 }
-
 #video {
     margin-top: 50px;
     text-align: center;
 }
-
 #photos {
     margin-top: 150px;
-    text-align: center
+    text-align: center;
+        
 }
 
 .marathon {
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
 }
 
 #articlegp {
@@ -180,9 +191,11 @@ h3 {
 
 }
 
+
 #articlegp p {
     font-family: 'inter', sans-serif;
     line-height: 2rem;
+    padding: 20px 20px;
 
 }
 
@@ -195,6 +208,7 @@ h3 {
     height: 30%;
     width: 30%;
     justify-content: center;
+
 }
 
 video {
@@ -220,14 +234,14 @@ form {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
     padding: 100px;
-    background-color: rgba(202, 185, 159, 0.748);
+    text-align: center;
+    background-color: rgba(252, 250, 249, 0.748);
     box-sizing: border-box;
 }
 
 fieldset {
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 #meteo>h4 {
@@ -254,93 +268,162 @@ fieldset {
     width: 50%;
 }
 
-.slides img {
-    display: block;
-}
-
-.slider {
-    width: 714px;
-    height: 555px;
-    margin: 0 auto;
-    overflow: hidden;
+.carousel {
     position: relative;
-    margin-bottom: 100px;
-    
-}
-
-.arrow-left, .arrow-right {
-    width: 30px;
-    height: 30px;
-    background-color: #000;
-    border-radius: 50%;
-    opacity: .4;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -15px;
-    transition: all 0.5s ease;
-}
-
-.arrow-left:hover, .arrow-right:hover {
-    opacity: 1;
-}
-
-.arrow-left {
-    left: 20px;
-}
-
-.arrow-right {
-    right: 20px;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #333;
 }
 
 .slides {
     display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 #tennis {
-    display: flex;
     margin-top: 100px;
-    margin-left: 2rem;
-    line-height: 2rem;
-
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
-
+#tennis p{
+    padding: 20px;
+}
 #tennis2 {
     display: flex;
-    line-height: 2rem;
-    margin-left: 2rem;
+    align-items: center;
+    padding: 20px;
 
 }
-
-#tennis2>p {
-    margin-top: 5rem;
+#tennis2 p {
+    padding: 20px;
 }
 
 .nadal {
-    height: 30%;
     width: 30%;
+    height: 30%;
 }
 
 #trump {
-    justify-content: center;
     text-align: center;
-
 }
 
 #trump p {
-    text-align: center;
     margin-top: 100px;
-    font-family: 'inter', sans-serif;
 }
 
 .trump2 {
-    margin-top: 100px;
-    height: 40%;
-    width: 40%;
+    width: 30%;
+    height: 30%;
+    margin-top: 50px;
+
 
 }
 
+#footer {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #333;
+    color: #f5f1f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.réseaux{
+    width: 3%;
+    height:3%;
+}
+
+
+
 @media (max-width: 768px) {
+
+    .prev,
+    .next {
+        padding: 10px;
+    }
+
+    #tennis {
+        display: flex;
+        margin-top: 100px;
+        margin-left: 2rem;
+        line-height: 2rem;
+
+    }
+
+    #tennis2 {
+        display: flex;
+        line-height: 2rem;
+        margin-left: 2rem;
+
+    }
+
+    #tennis2>p {
+        margin-top: 5rem;
+    }
+
+    .nadal {
+        height: 30%;
+        width: 30%;
+    }
+
+    #trump {
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    #trump p {
+        text-align: left;
+        margin-top: 100px;
+        font-family: 'inter', sans-serif;
+    }
+
+    .trump2 {
+        margin-top: 100px;
+        height: 60%;
+        width: 60%;
+
+    }
+
+    p {
+        text-align: left;
+    }
+
     #premierarticle {
         display: block;
     }
@@ -348,6 +431,7 @@ fieldset {
     #bandeau2 ul {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
 
     #article {
@@ -411,6 +495,7 @@ fieldset {
     #photos {
         margin-top: 50px;
     }
+
     .articles {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -418,5 +503,17 @@ fieldset {
         margin-top: 150px;
         text-align: center;
         align-items: center;
+    }
+    #footer p{
+        font-size: 0.3rem
+    }     
+    
+    h1 {
+        font-size: 1rem;
+        
+    }
+    .réseaux{
+        width:7%;
+        height:7%;
     }
 }

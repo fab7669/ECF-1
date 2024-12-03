@@ -49,23 +49,35 @@
     </header>
     <main>
         <div id="meteo">
-            <h1> Voici les prévisions météorologiques pour le Beaujolais aujourd'hui :</h1>
+            <h1> Les prévisions météorologiques pour le Beaujolais :</h1>
             <p> Température: Entre 5°C et 9°C <br>
                 Conditions: Principalement nuageux avec quelques éclaircies <br>
                 Précipitations: Faible risque de pluie, surtout en soirée</p>
         </div>
-        <div class="slider">
-            <div class="arrow-left"></div>
+        <div class="carousel">
             <div class="slides">
-                <div class="slide"><img src="./images/meteo1.jpg" alt="1"></div>
-                <div class="slide"><img src="./images/METEO2.jpg" alt="2"></div>
-                <div class="slide"><img src="./images/METEO3.jpg" alt="3"></div>
-            </div>
-            <div class="arrow-right"></div>
+                <div class="slide"><img src="./images/meteo1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="./images/METEO2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="./images/METEO3.jpg" alt="Image 3"></div>
+            </div> <button class="prev" onclick="changeSlide(-1)">&#10094;</button> <button class="next"
+                onclick="changeSlide(1)">&#10095;</button>
+        </div>
         </div>
         <script src="./main.js"></script>
     </main>
     <footer>
+        <div id="footer">
+            <img src="./images/logo imaginaire dun journal du beujolais.png" width="5%" alt="">  
+            <p>Notre journal</p>
+                <p>Les sites du groupe</p> 
+                <p>Nos thématiques</p>
+                <p>Nos services</p>
+                <p>Suivez nous </p>
+                <img src="./images/facebook.png" class="réseaux" alt="facebook">
+            <img src="./images/Instagram_icon.png.webp" class="réseaux" alt="insta">
+            <img src="./images/twitter-icon-free-png.webp"class="réseaux" alt="twitter">
+    
+            </div>
     </footer>
 </body>
 
