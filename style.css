@@ -3,66 +3,75 @@
     padding: 0;
 }
 
-#bandeau2 ul {
+nav {
+    background-color: #333;
+    color: #fff;
     display: flex;
-    list-style-type: none;
+    padding: 10px;
+    text-align: center;
 }
 
-#bandeau2>ul>li {
-    position: relative;
-
-}
-
-#bandeau2>ul>li>ul {
-    position: absolute;
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
     display: none;
+   
 }
 
-#bandeau2>ul>li :hover {
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+        
+}
+
+.nav-links li {
+    margin-right: 20px;
+    
+    
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    padding: 50px;
+    font-style: 'inknut antiqua','sans serif';
+           
+}
+.nav-links a:hover{
     text-decoration: underline;
 }
 
-#bandeau2>ul>li>a {
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 600;
-    padding: 0 90px;
-    text-decoration: none;
-    font-family: inknut antiqua, avec-serif;
-    color: #f8f4f4;
-    padding-top: 20px;
-}
 
-#bandeau2>ul>li:hover>ul {
-    display: block;
-}
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+     }   
+    .nav-links a{
+        padding: 0px 0px;
 
-#bandeau2>ul>li>ul>li>a {
-    display: block;
-    position: relative;
-    font-family: inknut antiqua, avec-serif;
-    text-decoration: none;
-    color: #f5f1f1;
-    line-height: 20px;
-    width: 200px;
-    margin-left: 40px;
-
-}
-
-
-
-#bandeau1 {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    position: relative;
-    background-color: #333;
+    
+        
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
 }
 
 .logo {
-    height: 8%;
-    width: 8%;
+    height: 6%;
+    width: 6%;
 }
 
 #beaujolaisnouveau {
@@ -208,6 +217,7 @@ h3 {
     height: 30%;
     width: 30%;
     justify-content: center;
+    border-radius: 20px;
 
 }
 
@@ -267,7 +277,6 @@ fieldset {
     height: 50%;
     width: 50%;
 }
-
 .carousel {
     position: relative;
     max-width: 1000px;
@@ -335,6 +344,7 @@ fieldset {
 .nadal {
     width: 30%;
     height: 30%;
+    border-radius: 20px;
 }
 
 #trump {
@@ -349,6 +359,7 @@ fieldset {
     width: 30%;
     height: 30%;
     margin-top: 50px;
+    border-radius: 20px;
 
 
 }
@@ -417,6 +428,7 @@ fieldset {
         margin-top: 100px;
         height: 60%;
         width: 60%;
+        
 
     }
 
@@ -505,7 +517,7 @@ fieldset {
         align-items: center;
     }
     #footer p{
-        font-size: 0.3rem
+        font-size: 0.6rem
     }     
     
     h1 {
